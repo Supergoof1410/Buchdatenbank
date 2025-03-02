@@ -1,0 +1,224 @@
+[04.09.2023 08:43:13] [User: NA-2021172] - Login
+[04.09.2023 08:58:10] [User: NA-2021172] - Logout
+[04.09.2023 08:58:26] [User: NA-2021172] - Login
+[04.09.2023 08:58:49] [User: NA-2021172] - Logout
+[04.09.2023 09:00:29] [User: NA-2021172] - Login
+[04.09.2023 09:03:51] [User: NA-2021172] - Logout
+[04.09.2023 09:04:23] [User: NA-2021172] - Login
+[04.09.2023 09:04:38] [User: NA-2021172] - Logout
+[04.09.2023 09:07:08] [User: NA-2021172] - Login
+[04.09.2023 09:17:24] [User: NA-2021172] - Logout
+[04.09.2023 09:20:46] [User: NA-2021172] - Login
+[04.09.2023 09:21:06] [User: NA-2021172] - Logout
+[04.09.2023 09:24:24] [User: NA-2021172] - Login
+[04.09.2023 09:24:39] [User: NA-2021172] - Logout
+[04.09.2023 09:25:03] [User: NA-2021172] - Login
+[04.09.2023 09:29:10] [User: NA-2021172] - Login
+[04.09.2023 09:29:36] [User: NA-2021172] - Logout
+[04.09.2023 09:34:50] [User: NA-2021172] - Login
+[04.09.2023 10:54:14] [User: NA-2021172] - Logout
+[04.09.2023 10:58:11] [User: NA-2021172] - Login
+[04.09.2023 11:03:00] [User: NA-2021172] - Login
+[04.09.2023 11:05:27] [User: NA-2021172] - Login
+[04.09.2023 11:06:43] [User: NA-2021172] - Logout
+[04.09.2023 11:13:02] [User: NA-2021172] - Login
+[04.09.2023 11:14:30] [User: NA-2021172] - Logout
+[04.09.2023 11:48:48] [User: NA-2021172] - Login
+[04.09.2023 11:49:32] [User: NA-2021172] - Logout
+[04.09.2023 11:51:30] [User: NA-2021172] - Login
+[04.09.2023 11:52:17] [User: NA-2021172] - Logout
+[04.09.2023 11:52:43] [User: NA-2021172] - Login
+[04.09.2023 11:53:13] [User: NA-2021172] - Logout
+[04.09.2023 11:53:55] [User: NA-2021172] - Login
+[04.09.2023 11:54:11] [User: NA-2021172] - Logout
+[04.09.2023 11:54:30] [User: NA-2021172] - Login
+[04.09.2023 11:54:55] [User: NA-2021172] - Logout
+[04.09.2023 11:57:38] [User: NA-2021172] - Login
+[04.09.2023 11:59:25] [User: NA-2021172] - Logout
+[04.09.2023 12:20:07] [User: NA-2021172] - Login
+[04.09.2023 12:21:19] [User: NA-2021172] - Logout
+[04.09.2023 12:22:58] [User: NA-2021172] - Login
+[04.09.2023 12:24:15] [User: NA-2021172] - Logout
+[04.09.2023 13:07:45] [User: NA-2021172] - Login
+[04.09.2023 13:07:51] [User: NA-2021172] - Logout
+[04.09.2023 13:18:36] [User: NA-2021172] - Login
+[04.09.2023 13:19:04] [User: NA-2021172] - Login
+[04.09.2023 13:19:12] [User: NA-2021172] - Logout
+[04.09.2023 13:26:40] [User: NA-2021172] - Login
+[04.09.2023 13:26:57] [User: NA-2021172] - Logout
+[04.09.2023 13:28:35] [User: NA-2021172] - Login
+[04.09.2023 13:28:41] [User: NA-2021172] - Logout
+[04.09.2023 13:29:12] [User: NA-2021172] - Login
+[04.09.2023 13:29:27] [User: NA-2021172] - Logout
+[04.09.2023 13:42:45] [User: NA-2021172] - Login
+[04.09.2023 13:43:00] [User: NA-2021172] - Logout
+[04.09.2023 13:43:51] [User: NA-2021172] - Login
+[04.09.2023 13:47:18] [User: NA-2021172] - Login
+[04.09.2023 13:47:23] [User: NA-2021172] - Logout
+[04.09.2023 13:48:16] [User: NA-2021172] - Login
+[04.09.2023 13:50:36] [User: NA-2021172] - Login
+[04.09.2023 13:58:26] [User: NA-2021172] - Login
+[04.09.2023 13:59:17] [User: NA-2021172] - Logout
+[04.09.2023 14:00:18] [User: NA-2021172] - Login
+[04.09.2023 14:00:34] [User: NA-2021172] - Logout
+[04.09.2023 14:02:28] [User: NA-2021172] - Login
+[04.09.2023 14:02:39] [User: NA-2021172] - Logout
+[04.09.2023 14:07:51] [User: NA-2021172] - Login
+[04.09.2023 14:08:18] [User: NA-2021172] - Logout
+[05.09.2023 08:11:55] [User: NA-2021172] - Login
+[05.09.2023 08:36:02] [User: NA-2021172] - Logout
+[06.09.2023 12:08:10] [User: NA-2021172] - Login
+[06.09.2023 12:14:25] [User: NA-2021172] - Login
+[06.09.2023 12:15:49] [User: NA-2021172] - Login
+[06.09.2023 12:15:57] [User: NA-2021172] - Logout
+[06.09.2023 12:16:46] [User: NA-2021172] - Login
+[06.09.2023 12:16:55] [User: NA-2021172] - Logout
+[06.09.2023 12:18:14] [User: NA-2021172] - Login
+[06.09.2023 12:18:19] [User: NA-2021172] - Logout
+[06.09.2023 12:34:05] [User: NA-2021172] - Login
+[06.09.2023 12:34:39] [User: NA-2021172] - Logout
+[07.09.2023 08:34:50] [User: NA-2021172] - Login
+[07.09.2023 08:46:47] [User: NA-2021172] - Logout
+[08.09.2023 11:49:52] [User: NA-2021172] - Login
+[08.09.2023 11:50:26] [User: NA-2021172] - Logout
+[08.09.2023 11:52:25] [User: NA-2021172] - Login
+[08.09.2023 11:52:42] [User: NA-2021172] - Logout
+[08.09.2023 12:03:21] [User: NA-2021172] - Login
+[08.09.2023 12:05:06] [User: NA-2021172] - Logout
+[08.09.2023 12:08:06] [User: NA-2021172] - Login
+[08.09.2023 12:08:36] [User: NA-2021172] - Logout
+[08.09.2023 12:09:31] [User: NA-2021172] - Login
+[08.09.2023 12:09:56] [User: NA-2021172] - Logout
+[19.09.2023 12:53:28] [User: NA-2021172] - Login
+[19.09.2023 12:55:17] [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 12:55:17] [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 12:56:25] [User: NA-2021172] - Login
+[19.09.2023 12:59:40] [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 12:59:40] [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:00:05] [User: NA-2021172] - Logout
+[19.09.2023 13:04:40] [User: NA-2021172] - Login
+[19.09.2023 13:04:59] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:05:06] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:06:58] [User: NA-2021172] - Login
+[19.09.2023 13:07:12] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:07:12] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:08:02] [User: NA-2021172] - Login
+[19.09.2023 13:08:16] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:08:16] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:08:29] [User: NA-2021172] - Logout
+[19.09.2023 13:12:37] [User: NA-2021172] - Login
+[19.09.2023 13:12:51] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:12:51] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:13:01] [User: NA-2021172] - Logout
+[19.09.2023 13:13:29] [User: NA-2021172] - Login
+[19.09.2023 13:13:42] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:13:48] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:17:26] [User: NA-2021172] - Login
+[19.09.2023 13:17:55] [User: NA-2021172] - Logout
+[19.09.2023 13:19:12] [User: NA-2021172] - Login
+[19.09.2023 13:19:30] [User: NA-2021172] - Logout
+[19.09.2023 13:20:20] [User: NA-2021172] - Login
+[19.09.2023 13:20:55] [User: NA-2021172] - Logout
+[19.09.2023 13:23:30] [User: NA-2021172] - Login
+[19.09.2023 13:24:52] [User: NA-2021172] - Login
+[19.09.2023 13:25:21] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:25:27] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:27:46] [User: NA-2021172] - Login
+[19.09.2023 13:28:05] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:28:05] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:28:07] [User: NA-2021172] - Logout
+[19.09.2023 13:30:11] [User: NA-2021172] - Login
+[19.09.2023 13:30:23] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:30:23] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:30:26] [User: NA-2021172] - Logout
+[19.09.2023 13:31:37] [User: NA-2021172] - Login
+[19.09.2023 13:31:49] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:31:49] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:32:25] [User: NA-2021172] - Logout
+[19.09.2023 13:34:44] [User: NA-2021172] - Login
+[19.09.2023 13:34:57] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:34:57] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:35:21] [User: NA-2021172] - Logout
+[19.09.2023 13:36:11] [User: NA-2021172] - Login
+[19.09.2023 13:36:24] [User: NA-2021172] - Logout
+[19.09.2023 13:36:40] [User: NA-2021172] - Login
+[19.09.2023 13:36:46] [User: NA-2021172] - Logout
+[19.09.2023 13:42:29] [User: NA-2021172] - Login
+[19.09.2023 13:42:34] [User: NA-2021172] - Logout
+[19.09.2023 13:42:54] [User: NA-2021172] - Login
+[19.09.2023 13:43:00] [User: NA-2021172] - Logout
+[19.09.2023 13:43:13] [User: NA-2021172] - Login
+[19.09.2023 13:43:17] [User: NA-2021172] - Logout
+[19.09.2023 13:43:28] [User: NA-2021172] - Login
+[19.09.2023 13:43:45] [User: NA-2021172] - Logout
+[19.09.2023 13:43:55] [User: NA-2021172] - Login
+[19.09.2023 13:44:09] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:44:09] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:44:41] [User: NA-2021172] - Logout
+[19.09.2023 13:45:11] [User: NA-2021172] - Login
+[19.09.2023 13:45:19] [User: NA-2021172] - Logout
+[19.09.2023 13:45:55] [User: NA-2021172] - Login
+[19.09.2023 13:46:02] [User: NA-2021172] - Logout
+[19.09.2023 13:46:30] [User: NA-2021172] - Login
+[19.09.2023 13:46:34] [User: NA-2021172] - Logout
+[19.09.2023 13:46:46] [User: NA-2021172] - Login
+[19.09.2023 13:46:51] [User: NA-2021172] - Logout
+[19.09.2023 13:47:06] [User: NA-2021172] - Login
+[19.09.2023 13:47:54] [User: NA-2021172] - Logout
+[19.09.2023 13:48:05] [User: NA-2021172] - Login
+[19.09.2023 13:48:09] [User: NA-2021172] - Logout
+[19.09.2023 13:48:19] [User: NA-2021172] - Login
+[19.09.2023 13:48:35] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:48:35] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:48:51] [User: NA-2021172] - Logout
+[19.09.2023 13:49:43] [User: NA-2021172] - Login
+[19.09.2023 13:49:55] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:49:57] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:50:14] [User: NA-2021172] - Logout
+[19.09.2023 13:52:36] [User: NA-2021172] - Login
+[19.09.2023 13:52:49] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:52:53] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:53:16] [User: NA-2021172] - Logout
+[19.09.2023 13:55:31] [User: NA-2021172] - Login
+[19.09.2023 13:55:44] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 13:55:44] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.Zeile 119
+[19.09.2023 13:55:50] [User: NA-2021172] - Logout
+[19.09.2023 13:57:43] [User: NA-2021172] - Login
+[19.09.2023 13:57:55] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.Zeile 191
+[19.09.2023 13:57:55] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.Zeile 119
+[19.09.2023 13:58:05] [User: NA-2021172] - Logout
+[19.09.2023 13:59:44] [User: NA-2021172] - Login
+[19.09.2023 14:00:09] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.Zeile 191
+[19.09.2023 14:00:43] [User: NA-2021172] - Login
+[19.09.2023 14:00:56] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.Zeile 191
+[19.09.2023 14:00:56] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 14:00:56] - [User: NA-2021172] - [SQLError] - SQLite Error 1: 'near "s": syntax error'.
+[19.09.2023 14:01:21] [User: NA-2021172] - Logout
+[20.09.2023 08:15:04] [User: NA-2021172] - Login
+[20.09.2023 08:16:37] [User: NA-2021172] - Logout
+[20.09.2023 13:13:11] [User: NA-2021172] - Login
+[20.09.2023 13:13:27] [User: NA-2021172] - Logout
+[20.09.2023 13:17:25] [User: NA-2021172] - Login
+[20.09.2023 13:17:37] [User: NA-2021172] - Logout
+[20.09.2023 13:18:30] [User: NA-2021172] - Login
+[20.09.2023 13:18:43] [User: NA-2021172] - Logout
+[20.09.2023 14:14:58] [User: NA-2021172] - Login
+[20.09.2023 14:15:03] [User: NA-2021172] - Logout
+[20.09.2023 14:15:26] [User: NA-2021172] - Login
+[20.09.2023 14:15:38] [User: NA-2021172] - Logout
+[20.09.2023 14:18:01] [User: NA-2021172] - Login
+[20.09.2023 14:18:49] [User: NA-2021172] - Logout
+[21.09.2023 12:58:45] [User: NA-2021172] - Login
+[21.09.2023 12:59:37] [User: NA-2021172] - Logout
+[21.09.2023 13:00:10] [User: NA-2021172] - Login
+[21.09.2023 13:00:17] [User: NA-2021172] - Logout
+[21.09.2023 13:00:50] [User: NA-2021172] - Login
+[21.09.2023 13:01:36] [User: NA-2021172] - Logout
+[21.09.2023 13:02:08] [User: NA-2021172] - Login
+[21.09.2023 13:03:05] [User: NA-2021172] - Logout
+[21.09.2023 13:03:56] [User: NA-2021172] - Login
+[21.09.2023 13:04:36] [User: NA-2021172] - Logout
+[21.09.2023 13:05:13] [User: NA-2021172] - Login
+[21.09.2023 13:05:32] [User: NA-2021172] - Logout
+[22.09.2023 08:11:06] - [User: NA-2021172] - Login
+[22.09.2023 08:11:29] - [User: NA-2021172] - Logout
