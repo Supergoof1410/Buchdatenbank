@@ -1,0 +1,70 @@
+Dieses Programm wurde entwickelt für die Neue-Arbeit in Essen, um den Teilnehmern
+in dem Fachbereich "Buchbüro" zu unterstützen. Das Programm holt unter der Angabe einer ISBN
+die Daten für ein Buch aus dem Web oder wenn schon vorhanden aus der Datenbank.
+
+Entwickler: 
+
+Alexander Kiene (Teilnehmer)
+Software und Datenbankentwickler
+
+Die vorliegenden Ordner mit Ihren Dateien sollen der Dokumentation dienen,
+damit auch andere das Programm weiterentwickeln/ändern können.
+
+In dem Ordner "Buchdatenbank" liegt der offene Code von dem Programm (nicht compiliert) vor.
+Hier fehlen die Ordner "/bin" "/obj" damit es beim compilieren mit einem anderen Compiler
+nicht zu Konflikten kommt. Zudem ist es auch Platzsparender. Das Programm wurde teils mit Visual
+Studio Code und Visual Studio Community 2022 erstellt. In der Datei "Buchdatenbank.csproj" finden
+sich die Informationen welche Pakete eingetragen sind und wie es veröffentlich wird, darunter auch
+die Ordnerstruktur für die Bilder und der Datenbank.
+
+Der Code ist nicht komplett mit Kommentaren versehen, weil ich davon ausgehe das manche Funktionen
+schon durch Ihren Namen aussagen was die entsprechende Funktion macht. Beim Kompilieren wird der 
+Ordner "Log" nicht erstellt. Der wird erst erstellt wenn das Programm zum ersten mal startet, solange 
+man die Datei oder Ordner löscht, wird bei jedem Schreibvorgang die Informationen in die Datei geschrieben
+bzw. angehängt. Beim Kompilieren wird die DB in dem Ordner "DatabaseSqlite" neu erstellt, das kann man aber
+in der Datei "Buchdatenbank.csproj" ändern.
+
+In dem Ordner "FilesForTheFirstDatabaseToMake" ist eine leere Datenbank. Für den Fall das man Testszenarien durch
+führen möchte. Hierbei rate ich die Datenbank immer zu kopieren und mit der Kopie zu arbeiten. Zudem ist dort auch
+eine .sql-Datei hinterlegt womit man die Datenbank generieren kann.
+
+Das Programm hat eine Funktion die eine automatische Sicherung der Datenbank nach beendigung des Programmes macht.
+Die Ordner-Struktur wird durch die settings.config bereitgestellt, was gewährleistet das man den Ordner verschieben/umbenennen
+kann ohne das Programm erneut kompilieren zu müssen. Wenn der Ordner nicht existiert wird er automatisch erstellt.
+Die Datei settings.config und der Backup-Ordner sind versteckt.
+
+Zum kompilieren und veröffentlichen empfehle ich das Programm "Visual Studio Community 2022", da
+es wesentlich komfortabler ist als andere Compiler.
+
+.Net Version: 7.0
+Datenbank: SQLite
+Runtime: win-x64
+
+Wenn die Software veröffentlicht wird, dann wird sie als Standalone Programm erstellt. Grund
+dafür ist das das Programm auch ohne installation von .Net ausgeführt wird. Es ist zwar größer
+aber dafür auf jeden beliebigen Windows(64-Bit) Rechner ausführbar.
+
+In dem Ordner "Buchbüro_docs" ist ein PAP (Programmablaufplan) untergebracht, und ein ER-Diagramm (Entity-Relationship) 
+von der Datenbank
+
+Updates/Fixes:
+
+[1.0.1]
+	- SQLite-Problem mit Single-Quotes (') behoben.
+	- Versionsänderung von 1.0.0 Beta -> 1.0.1
+
+[1.0.2]
+	- nach drücken des "Neuer Eintrag" Buttons, wird automatisch die Textbox für die ISBN auf den Focus gesetzt.
+	- kleinere Fehler behoben.
+	- neue Rubrik in der DB hinzugefügt -> "Kinder & Jugend" bzw. geändert -> "GEO Länder und Menschen"
+	- Versionsänderung von 1.0.1 -> 1.0.2
+
+[1.1.2]
+	- SplashScreen hinzugefügt
+	- automatische Sicherung hinzugefügt
+	- config-Datei hinzugefügt zum ändern/verschieben der Ordnerstruktur für die Sicherung
+	- Versionsänderung von 1.0.2 -> 1.1.2
+
+[1.1.3]
+	- Probleme mit der Sicherung behoben
+	- automatisches zurücksetzen der Rubrik nach Änderung der Boxnummer hinzugefügt
