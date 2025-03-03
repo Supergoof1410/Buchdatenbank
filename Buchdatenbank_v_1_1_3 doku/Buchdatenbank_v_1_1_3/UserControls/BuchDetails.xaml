@@ -1,0 +1,379 @@
+﻿<UserControl x:Class="Buchdatenbank.UserControls.BuchDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:buchdatenbank="clr-namespace:Buchdatenbank"
+             d:DataContext="{d:DesignInstance Type=buchdatenbank:NotifyMethodChanged}"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="1400">
+    <UserControl.Resources>
+        <!--#region Allgemeine Einstellungen für die verschiedenen Elemente -->
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Visibility" Value="Visible"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0,0,5,0"/>
+        </Style>
+        <Style x:Key="MyTooltip" TargetType="{x:Type ToolTip}">
+            <Setter Property = "HorizontalOffset" Value="0"/>
+            <Setter Property = "VerticalOffset" Value="0"/>
+            <Setter Property = "Background" Value="Beige"/>
+            <Setter Property = "Foreground" Value="Black"/>
+            <Setter Property = "FontSize" Value="12"/>
+            <Setter Property = "ToolTipService.InitialShowDelay" Value="0"/>
+        </Style>
+        <!--#endregion-->
+    </UserControl.Resources>
+
+    <Grid ShowGridLines="False">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="530"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--#region GroupBox für die erforderlichen Daten -->
+            <GroupBox x:Name="inputBookdata" 
+                  Grid.Column="0" Grid.Row="0" 
+                  Height="Auto" Width="Auto" Margin="10,10,10,10" FontSize="16"
+                  VerticalAlignment="Top"
+                  Header="Erforderliche Daten">
+                <Grid x:Name="inputDataInformation" ShowGridLines="False" Margin="10,10,10,10" Width="Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Boxnummer*:" Grid.Column="0" Grid.Row="0" />
+                    <TextBlock Text="ISBN-10/13:" Grid.Column="0" Grid.Row="2" FontWeight="Normal" />
+                    <TextBlock Text="Rubrik*:" Grid.Column="0" Grid.Row="1"/>
+                    <TextBlock x:Name="noOffer" Grid.Column="1" Grid.Row="4" Width="Auto" MinWidth="100"/>
+
+                    <Image x:Name="boxIcon" Grid.Column="0" Grid.Row="0" Source="../Images/uncheck.png" />
+                    <Image x:Name="categoryIcon" Grid.Column="0" Grid.Row="1" Source="../Images/uncheck.png"/>
+                    <Image x:Name="isbnIcon" Grid.Column="0" Grid.Row="2" />
+
+                    <TextBox x:Name="boxnumber"
+                    Grid.Column="1" Grid.Row="0"
+                    MaxLength="4"
+                    Text="" TabIndex="1"
+                    MinWidth="43" Width="Auto"
+                    TextChanged="Boxnumber_TextChanged"/>
+                    <ComboBox x:Name="cbCategory" ItemsSource="{Binding CategoryList}"
+                          DisplayMemberPath="CategoryName" SelectedValuePath="CategoryName"
+                          SelectedIndex="0" TabIndex="2"
+                          Grid.Column="1" Grid.Row="1"
+                          SelectionChanged="CbCategory_SelectionChanged">
+                          <ComboBox.ToolTip>
+                            <ToolTip Style="{StaticResource MyTooltip}">
+                                    <TextBlock FontWeight="Normal" TextWrapping="Wrap">
+                                        Wenn die Auswahl gesperrt ist! <LineBreak/>
+                                        Boxnummer ändern, damit die Auswahl auch wieder entsperrt ist!
+                                    </TextBlock>
+                                </ToolTip>
+                          </ComboBox.ToolTip>
+                    </ComboBox>
+
+                    <Grid Grid.Column="1" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="isbnNumber" 
+                             Grid.Column="0"
+                             Text="" TabIndex="3"
+                             MaxLength="20" 
+                             MinWidth="115" Width="Auto" HorizontalAlignment="Left"
+                             TextChanged="IsbnNumber_TextChanged"
+                             ToolTipService.IsEnabled="True" ToolTipService.InitialShowDelay="0" 
+                             KeyDown="IsbnNumber_OnKeyDownHandler" >
+                            <TextBox.ToolTip>
+                                <ToolTip Style="{StaticResource MyTooltip}">
+                                    <TextBlock FontWeight="Normal" TextWrapping="Wrap">
+                                        Bitte eine gültige ISBN eingeben: <LineBreak/>
+                                        Beispiele: <LineBreak/> 
+                                        13-stellig: 978-3-0000-0000-3 oder 9783000000003 <LineBreak/>
+                                        10-stellig: 3-0000-000-2X oder 300000002X <LineBreak/>
+                                        das x ist auch möglich egal ob klein oder GROSS geschrieben.
+                                    </TextBlock>
+                                </ToolTip>
+                            </TextBox.ToolTip>
+
+                        </TextBox>
+                        <Button x:Name="BtnClearIsbn" Content="Clear"
+                            Grid.Column="1"
+                            Margin="10,0,0,0" Width="50" HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            IsEnabled="False" Click="BtnClearIsbn_Click"/>
+                    </Grid>
+
+                    <Button x:Name="BtnGetData" Content="Informationen holen"
+                        Grid.Column="1" Grid.Row="3" 
+                        Margin="0,0,0,0"
+                        IsEnabled="False" Click="BtnGetData_Click"/>
+
+
+                </Grid>
+            </GroupBox>
+            <!--#endregion-->
+
+            <!--#region GroupBox für die Buchinformationen -->
+            <GroupBox x:Name="buchdetails" Grid.Column="0" Grid.Row="1" Header="Buchinformationen" 
+                  Height="Auto" Width="Auto" Margin="10,10,10,10" FontSize="16"
+                  VerticalAlignment="Top">
+                <Grid x:Name="Information" ShowGridLines="False" Margin="10,10,0,10" Width="Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="140"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Autor/in:" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Margin="0,10" FontWeight="Normal" />
+                    <TextBlock Text="Verlag:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" Margin="0,10" FontWeight="Normal" />
+                    <TextBlock Text="Titel*:" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" Margin="0,10"/>
+                    <TextBlock Text="Erschienen:" Grid.Column="0" Grid.Row="3" FontWeight="Normal" />
+                    <TextBlock Text="Einband*:" Grid.Column="0" Grid.Row="4"/>
+                    <TextBlock Text="Zustand*:" Grid.Column="0" Grid.Row="5"/>
+
+                    <TextBlock Text="Preis:" Grid.Column="0" Grid.Row="6" FontWeight="Normal" />
+
+                    <Image x:Name="authorIcon" Grid.Column="0" Grid.Row="0" VerticalAlignment="Top" Margin="0,13,5,0"/>
+                    <Image x:Name="publisherIcon" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" Margin="0,13,5,0"/>
+                    <Image x:Name="titleIcon" Grid.Column="0" Grid.Row="2" 
+                           VerticalAlignment="Top" Margin="0,13,5,0"
+                           Source="../Images/uncheck.png"/>
+                    <Image x:Name="publishedIcon" Grid.Column="0" Grid.Row="3" />
+                    <Image x:Name="coverIcon" Grid.Column="0" Grid.Row="4" Source="../Images/uncheck.png"/>
+                    <Image x:Name="statusIcon" Grid.Column="0" Grid.Row="5" Source="../Images/uncheck.png"/>
+                    <Image x:Name="priceIcon" Grid.Column="0" Grid.Row="6" Source="../Images/check.png"/>
+
+                    <TextBox x:Name="bookAuthor"
+                             Grid.Column="1" Grid.Row="0"
+                             Text="" TabIndex="4"
+                             MinWidth="330" MaxWidth="330" Width="Auto" Height="Auto"
+                             VerticalAlignment="Center" Margin="0,10,0,10"
+                             TextWrapping="Wrap" TextChanged="BookAuthor_TextChanged"/>
+                    <TextBox x:Name="bookPublisher"
+                             Grid.Column="1" Grid.Row="1"
+                             Text="" TabIndex="5"
+                             MinWidth="330" MaxWidth="330" Width="Auto" Height="Auto"
+                             VerticalAlignment="Center" Margin="0,10,0,10"
+                             TextWrapping="Wrap" TextChanged="BookPublisher_TextChanged"/>
+                    <TextBox x:Name="bookTitle"
+                             Grid.Column="1" Grid.Row="2"
+                             Text="" TabIndex="6"
+                             MinWidth="330" MaxWidth="330" Width="Auto" Height="Auto"
+                             VerticalAlignment="Center" Margin="0,10,0,10"
+                             TextWrapping="Wrap" TextChanged="BookTitle_TextChanged"/>
+                    <TextBox x:Name="bookPublished"
+                             Grid.Column="1" Grid.Row="3"
+                             MaxLength="4"
+                             Text="" TabIndex="7"
+                             VerticalAlignment="Center"
+                             MinWidth="43" Width="Auto" Height="Auto"
+                             TextChanged="BookPublished_TextChanged"/>
+                    <TextBox x:Name="bookPrice" TabIndex="10"
+                             Grid.Column="1" Grid.Row="6"
+                             Text="1,00" IsEnabled="True"
+                             MinWidth="53" Width="Auto" TextChanged="BookPrice_TextChanged" />
+
+                    <ComboBox x:Name="cbCover"
+                          Grid.Column="1" Grid.Row="4" 
+                          ItemsSource="{Binding CoverList}"
+                          DisplayMemberPath="CoverName" SelectedValuePath="CoverName"
+                          SelectedIndex="0" TabIndex="8"
+                          SelectionChanged="CbCover_SelectionChanged">
+                    </ComboBox>
+                    <ComboBox x:Name="cbStatus"
+                          Grid.Column="1" 
+                          Grid.Row="5" TabIndex="9"
+                          ItemsSource="{Binding StatusList}"
+                          DisplayMemberPath="StatusName" SelectedValuePath="StatusName"
+                          SelectedIndex="0"
+                          SelectionChanged="CbStatus_SelectionChanged">
+                          
+
+                    </ComboBox>
+
+                    <Button x:Name="BtnNewBook" Content="Neuer Eintrag"
+                        Grid.Column="1" Grid.Row="8"
+                        Margin="0,0,0,0"
+                        IsEnabled="True" Click="BtnNewBook_Click"/>
+
+                    <Grid Grid.Row="7" Grid.Column="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <CheckBox x:Name="cbSure" Content="Sicher?"
+                                  Grid.Row="0" Grid.Column="0"
+                                  Margin="0,0,0,0" Height="30"
+                                  VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+                                  IsChecked="false" Click="CbSure_Click"
+                                  FontSize="14" />
+
+                        <CheckBox x:Name="cbBuchmaxe" Grid.Column="1" Content="Buchmaxe"
+                                  Margin="30,0,0,0" Height="30"
+                                  VerticalContentAlignment="Center" HorizontalContentAlignment="Left"
+                                  IsChecked="false" Click="CbBuchmaxe_Click"
+                                  FontSize="14">
+                                    <CheckBox.ToolTip>
+                                        <ToolTip Style="{StaticResource MyTooltip}">
+                                                <TextBlock FontWeight="Normal" TextWrapping="Wrap">
+                                                    Nur ankreuzen wenn das Buch auch bei Buchmaxe angekauft wird <LineBreak/>
+                                                    Das Buch wird dann im zweiten Tab aufgelistet.
+                                                </TextBlock>
+                                            </ToolTip>
+                                    </CheckBox.ToolTip>
+                          </CheckBox>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+            <!--#endregion-->
+
+            
+        </Grid>
+        
+        <!--#region GroupBox für die aktuelle Tageszusammenfassung der eingegebenen Bücher -->
+        <Grid Grid.Column="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="summary" Grid.Column="1" Grid.Row="0" 
+                  Height="Auto" Width="Auto" VerticalAlignment="Top" 
+                  Margin="10,10,10,10" FontSize="16" Header="{Binding}" >
+
+            <Grid x:Name="summaryDay" ShowGridLines="False" Margin="10,10,10,10" Width="Auto">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="500"/>
+                </Grid.RowDefinitions>
+                    <DataGrid Name="database" FontSize="14" ItemsSource="{Binding}" 
+                              AutoGenerateColumns="False"
+                              CanUserDeleteRows="False" IsEnabled="True" 
+                              CanUserResizeRows="False" CanUserAddRows="False" CanUserSortColumns="False" CanUserReorderColumns="False"
+                              VerticalScrollBarVisibility="Visible"
+                              ScrollViewer.CanContentScroll="True">
+
+                        <DataGrid.Columns>
+
+                            <DataGridTextColumn Header="Boxnr." Binding="{Binding Boxnumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Rubrik" Binding="{Binding CategoryName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="ISBN" Binding="{Binding Isbn13, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Titel" Binding="{Binding Title, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                            Width="250">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style>
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Autor/in" Binding="{Binding Author, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Verlag" Binding="{Binding Publisher, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Erscheinungsjahr" Binding="{Binding Published, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="eingetragen:" Binding="{Binding ListedAt, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Preis(€)" Binding="{Binding Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Einband" Binding="{Binding CoverName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+            </Grid>
+        </GroupBox>
+        <!--#region GroupBox für Informationen zu Fehlern und Erfolgen -->
+        <GroupBox x:Name="debugInfo" Grid.Column="1" Grid.Row="1" Visibility="Visible"
+                  Height="Auto" Width="Auto" VerticalAlignment="Top" 
+                  Margin="10,10,10,10" FontSize="16" Header="Information">
+                <Grid x:Name="debugging" ShowGridLines="False" Margin="10,10,10,10" Width="Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" MinHeight="40"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBox x:Name="info" Height="Auto" Width="Auto" MinWidth="500"
+                             TextWrapping="Wrap" IsEnabled="False"
+                             Grid.Column="0" Grid.Row="0" FontSize="13"
+                             Text="{Binding DebugInfo}"/>
+                </Grid>
+            </GroupBox>
+            <!--#endregion-->
+        </Grid>
+        <!--#endregion-->
+    </Grid>
+</UserControl>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="Buchdatenbank.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:Buchdatenbank.UserControls"
+        xmlns:buchdatenbank="clr-namespace:Buchdatenbank"
+        d:DataContext="{d:DesignInstance Type=buchdatenbank:NotifyMethodChanged}"
+        mc:Ignorable="d" Icon="Images/books.png"
+        Title="Buchdatenbank - Neue Arbeit 1.1.3" Height="Auto" Width="Auto" WindowStartupLocation="CenterScreen"
+        WindowState="Maximized" Closing="Window_Closing">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom" Height="Auto" Width="Auto">
+            <TextBlock 
+                x:Name="State" Width="Auto" FontSize="16"
+                Height="20" HorizontalAlignment="Left" VerticalAlignment="Center"
+                Text="{Binding Online}">
+            </TextBlock>
+        </StatusBar>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <TabControl>
+                <TabItem Name="Maininformation">
+                    <TabItem.Header>
+                        <TextBlock Text="Buchinformationen (Allgemein)" FontSize="14" FontWeight="Bold" />
+                    </TabItem.Header>
+                    <uc:BuchDetails/>
+                </TabItem>
+                <TabItem Name="Buchmaxe">
+                    <TabItem.Header>
+                        <TextBlock Text="Informationen (Buchmaxe u. Boxen)" FontSize="14" FontWeight="Bold" />
+                    </TabItem.Header>
+                    <uc:Summary/>
+                </TabItem>
+            </TabControl>
+        </ScrollViewer>
+    </DockPanel>
+</Window>
